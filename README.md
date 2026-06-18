@@ -99,21 +99,26 @@ During this lab there was only really one hurdle which i will go into detail abo
 
 ## Screenshots
  
-**Role assignments on rg-app-dev:** [SCREENSHOT] The App-Developers group shown with Contributor role and Scope "This resource", confirming the assignment lives at the resource group level, not the subscription.
- 
-**Role assignments on finance-rg:** [SCREENSHOT] The Finance group shown with Cost Management Contributor and Scope "This resource" — least privilege scoped to finance only.
- 
-**Sheldon's access verified:** [SCREENSHOT] Check access for Sheldon Kamakazi showing Cost Management Contributor, Scope "This resource", and the Group assignment column confirming access comes through the Finance group, not a direct assignment.
- 
-**Sheldon sees only finance-rg:** [SCREENSHOT] Logged in as Sheldon — Resource groups list shows "Showing 1–1 of 1", only finance-rg visible. The rest of the subscription is invisible to him.
- 
-**Sheldon manages budgets in finance-rg:** [SCREENSHOT] Logged in as Sheldon — finance-rg → Cost Management → Budgets, showing the budget scoped to that resource group. His role works where it's assigned.
- 
-**Eddie sees only rg-app-dev:** [SCREENSHOT] Logged in as Eddie — Resource groups list shows "Showing 1–1 of 1", only rg-app-dev visible. finance-rg is absent — the mirror image of Sheldon.
- 
-**Eddie creates a storage account in rg-app-dev:** [SCREENSHOT] Logged in as Eddie — "Deployment succeeded" for a storage account in rg-app-dev, proving his Contributor role lets him provision real resources.
- 
-**Microsoft.Storage provider registered (as Owner):** [SCREENSHOT] Subscription → Resource providers → Microsoft.Storage showing Registered — a subscription-level action only the Owner could perform.
+![rg-app-dev-IAM](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/01%20-%20rg-app-dev%20Access%20control%20IAM%20.png?raw=true)
+
+![finance-rg-IAM](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/02%20-%20rg-finance-Access%20control%20IAM%20.png?raw=true)
+
+![sheldon-assigments](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/03%20-%20Sheldon%20assignments%20on%20finance-rg%20.png?raw=true)
+
+![sheldon-login](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/04%20-%20Sheldon%20view%20-%20Resource%20groups%20.png?raw=true)
+
+![eddie-login](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/06%20-%20Eddie%20view%20-%20Resource%20groups%20.png?raw=true)
+
+![storage-error](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/07%20-%20Eddie%20view%20-%20Storage%20Error.png?raw=true)
+
+![resource-provider](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/08%20-%20Resource%20provider%20added.png?raw=true)
+
+![storage-added](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/09-%20Eddie%20view%20-%20Storage%20account%20deployment%20succeeded%20in%20rg-app-dev.png?raw=true)
+
+![Labuser1-login](https://github.com/Awezkhan0/Azure-IAM-RBAC-Lab-Scope-Hierarchy-and-Least-Privilege/blob/main/Screenshots/10-%20Lab%20User%20view%20-%20Resource%20Groups.png?raw=true)
+
+
+
 
 
 
