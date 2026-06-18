@@ -81,7 +81,21 @@ During this lab there was only really one hurdle which i will go into detail abo
 **What I learned:** Some resource types need to be registered at the subscription level before they can be used. Eddie couldn't do this himself — registering is a subscription-level action, and his role only reached the resource group. So this also showed his scope limit in action.
  
 ---
+
  
+## What I Learned
+ 
+**Scope determines radius** — The level a role is assigned at matters as much as the role itself. Lab User 1's Reader at subscription scope sees far more than Eddie's Contributor on a single resource group, even though Contributor is the "stronger" role.
+ 
+**Scope limits visibility, not just actions** — A user assigned to one resource group doesn't just lack permission to change others — those resource groups don't even appear in their portal. Eddie couldn't see finance-rg and Sheldon couldn't see rg-app-dev. Least privilege working at the visibility level.
+ 
+**Least Privilege through built-in roles** — I gave the finance persona Cost Management Contributor rather than Contributor. It grants exactly what a finance user needs (cost and budget management) and nothing more (no control over actual resources). Reaching for a narrow built-in role instead of a broad one is a core security habit.
+ 
+**Group-based access** — Every role went on a group, never directly on a user. Users inherit access through membership. This scales: to onboard a new developer you add them to App-Developers, not re-assign roles one by one.
+ 
+**Not every block is a permissions problem** — Billing-tier limits and unregistered resource providers both blocked actions in ways that looked like RBAC denials but weren't. Telling the layers apart (billing vs. capability vs. RBAC) is essential for real-world troubleshooting.
+ 
+---
 
 
 
