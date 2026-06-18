@@ -4,6 +4,7 @@
 > scope hierarchy, and the Principle of Least Privilege using built-in roles,
 > security groups, and three real-world user situations.
 
+---
 ## What is this project?
 
 I built a working identity environment in Azure to show how role-based access
@@ -13,6 +14,7 @@ was to prove that the level at which a role is assigned (the scope) controls how
 far that access reaches, and that choosing the right built-in role grants someone
 exactly what they need (least privilege).
 
+---
 ## The Architecture
 
 Three personas, three groups, three scopes —
@@ -26,7 +28,7 @@ Three personas, three groups, three scopes —
 
   💼 Sheldon      ──▶   💷 Cost Mgmt @ finance-rg     ──▶   manages COSTS in finance only
 ```
-
+---
 ## What I Used
 
 **Subscription**
