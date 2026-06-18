@@ -97,6 +97,23 @@ During this lab there was only really one hurdle which i will go into detail abo
  
 ---
 
+## Screenshots
+ 
+**Role assignments on rg-app-dev:** [SCREENSHOT] The App-Developers group shown with Contributor role and Scope "This resource", confirming the assignment lives at the resource group level, not the subscription.
+ 
+**Role assignments on finance-rg:** [SCREENSHOT] The Finance group shown with Cost Management Contributor and Scope "This resource" — least privilege scoped to finance only.
+ 
+**Sheldon's access verified:** [SCREENSHOT] Check access for Sheldon Kamakazi showing Cost Management Contributor, Scope "This resource", and the Group assignment column confirming access comes through the Finance group, not a direct assignment.
+ 
+**Sheldon sees only finance-rg:** [SCREENSHOT] Logged in as Sheldon — Resource groups list shows "Showing 1–1 of 1", only finance-rg visible. The rest of the subscription is invisible to him.
+ 
+**Sheldon manages budgets in finance-rg:** [SCREENSHOT] Logged in as Sheldon — finance-rg → Cost Management → Budgets, showing the budget scoped to that resource group. His role works where it's assigned.
+ 
+**Eddie sees only rg-app-dev:** [SCREENSHOT] Logged in as Eddie — Resource groups list shows "Showing 1–1 of 1", only rg-app-dev visible. finance-rg is absent — the mirror image of Sheldon.
+ 
+**Eddie creates a storage account in rg-app-dev:** [SCREENSHOT] Logged in as Eddie — "Deployment succeeded" for a storage account in rg-app-dev, proving his Contributor role lets him provision real resources.
+ 
+**Microsoft.Storage provider registered (as Owner):** [SCREENSHOT] Subscription → Resource providers → Microsoft.Storage showing Registered — a subscription-level action only the Owner could perform.
 
 
 
