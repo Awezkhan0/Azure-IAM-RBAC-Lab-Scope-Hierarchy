@@ -1,4 +1,4 @@
-# Azure IAM & RBAC & Least Priviledge — Scope Hierarchy 
+# Azure IAM & RBAC & Least Privilege — Scope Hierarchy 
 
 > A hands-on Azure identity lab demonstrating role-based access control,
 > scope hierarchy, and the Principle of Least Privilege using built-in roles,
