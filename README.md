@@ -1,4 +1,4 @@
-# Azure IAM & RBAC Lab — Scope Hierarchy and Least Privilege
+# Azure IAM & RBAC Lab — Scope Hierarchy 
 
 > A hands-on Azure identity lab demonstrating role-based access control,
 > scope hierarchy, and the Principle of Least Privilege using built-in roles,
@@ -88,7 +88,7 @@ During this lab there was only really one hurdle, which I'll go into detail abou
 
 ## What I Learned
 
-**Scope determines radius** — The level a role is assigned at matters as much as the role itself. Lab User 1's Reader at subscription scope sees far more than Eddie's Contributor on a single resource group, even though Contributor is the "stronger" role.
+**Scope determines blast radius ** — The level a role is assigned at matters as much as the role itself. Lab User 1's Reader at subscription scope sees far more than Eddie's Contributor on a single resource group, even though Contributor is the "stronger" role.
 
 **Scope limits visibility, not just actions** — A user assigned to one resource group doesn't just lack permission to change others — those resource groups don't even appear in their portal. Eddie couldn't see finance-rg and Sheldon couldn't see rg-app-dev. Least privilege working at the visibility level.
 
